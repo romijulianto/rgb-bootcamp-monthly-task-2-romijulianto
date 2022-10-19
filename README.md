@@ -16,6 +16,7 @@ _Documentation by Romi Julianto_
 - npm install --save-dev @types/passport-local
 - npm install bcrypt --save
 - npm install @nestjs/jwt passport-jwt
+- npm install @types/passport-jwt --save-dev
 - npm i class-validator class-transformer --save
 - npm i --save class-validator class-transformer
 ```
