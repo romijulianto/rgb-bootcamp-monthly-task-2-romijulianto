@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
     // global prefix
-    app.setGlobalPrefix('cms/user');
+    app.setGlobalPrefix('apps/user');
     await app.listen(3000);
 }
 bootstrap();
