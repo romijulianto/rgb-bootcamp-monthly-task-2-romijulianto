@@ -1,10 +1,10 @@
 import { Controller, Get, Post, Put, Delete, Param, Body, NotFoundException, UseGuards, Request } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { ClinicsService } from './clinics.service';
 import { Clinic as ClinicEntity } from './clinics.entity';
+import { ClinicsService } from './clinics.service';
 import { ClinicDto } from './dto/clinics.dto';
 
-@Controller('clinics')
+@Controller('cms/clinics')
 export class ClinicsController {
     constructor(private readonly clinicService: ClinicsService) { }
 
