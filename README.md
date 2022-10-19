@@ -35,9 +35,12 @@ _Documentation by Romi Julianto_
 - nest generate module modules/apps/auth
 - nest generate service modules/apps/auth
 - nest g co modules/apps/auth
-- nest g module modules/apps/clinics
-- nest g service modules/apps/clinics
-- nest g controller modules/apps/clinics
+- nest g module modules/cms/clinics
+- nest g service modules/cms/clinics
+- nest g controller modules/cms/clinics
+- nest g module modules/cms/clinic_facility
+- nest g service modules/cms/clinic_facility
+- nest g controller modules/cms/clinic_facility
 ```
 
 ### Referensi
