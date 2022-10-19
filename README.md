@@ -1,4 +1,4 @@
-### Montly Task Backend Clinic Booking
+### Backend Booking Clinic using NestJS
 
 _Documentation by Romi Julianto_
 
@@ -24,12 +24,16 @@ _Documentation by Romi Julianto_
 
 ```bash
 - nest generate module core/database
-- nest generate module modules/users
-- nest generate service modules/users
-- nest generate module modules/auth
-- nest generate service modules/auth
-- nest g co modules/auth
-- nest g module modules/clinics
-- nest g service modules/clinics
-- nest g controller modules/clinics
+- nest generate module modules/apps/users
+- nest generate service modules/apps/users
+- nest generate module modules/apps/auth
+- nest generate service modules/apps/auth
+- nest g co modules/apps/auth
+- nest g module modules/apps/clinics
+- nest g service modules/apps/clinics
+- nest g controller modules/apps/clinics
 ```
+
+### Referensi
+
+- [How to Build Web APIs with NestJS, Postgres, and Sequelize - A Beginner's Guide](https://www.freecodecamp.org/news/build-web-apis-with-nestjs-beginners-guide/)
