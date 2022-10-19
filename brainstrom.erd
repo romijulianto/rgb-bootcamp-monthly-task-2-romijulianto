@@ -1,0 +1,19 @@
+ENTITAS
+0. User
+1. Clinic
+2. Test Covid
+3. Clinic Schedule and Quota
+
+RELATION
+ 1. User : Clinic           = 1 : M
+ 2. User : Test Covid       = 1 : M
+ 3. User : Clinic Schedule  = 1 : M
+
+    Clinic : Test Covid     = 1 : M
+    Test Covid  : Clinic    = M : 1
+    --------------------------------
+    Clinic >< Test Covid    = M : M => Clinic Test
+4. Clinic Test
+   id | id_clinic_test | id_tes_covid | tes_covid | id clinic
+
+
