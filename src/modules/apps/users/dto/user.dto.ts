@@ -23,7 +23,6 @@ export class UserDto {
     readonly password: string;
 
     @IsNotEmpty()
-    @IsDate()
     readonly birth_date: Date;
 
     @IsNotEmpty()
