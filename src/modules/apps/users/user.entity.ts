@@ -19,7 +19,7 @@ export class User extends Model<User> {
         type: DataType.STRING,
         allowNull: false,
     })
-    no_telephone: string;
+    phone: string;
 
     @Column({
         type: DataType.STRING,
