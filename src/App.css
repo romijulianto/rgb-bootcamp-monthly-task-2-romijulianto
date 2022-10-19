@@ -9,10 +9,12 @@
 }
 
 .App {
-  background-color: white;
+  background-color: black;
+  background: url(./assets/images/ic_background_img.png);
 }
 
 .Auth-form-container {
+  background: url(./assets/images/ic_background_img.png);
   display: flex;
   justify-content: center;
   align-items: center;

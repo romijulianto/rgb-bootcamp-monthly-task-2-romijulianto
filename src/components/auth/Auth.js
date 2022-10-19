@@ -22,16 +22,16 @@ function Auth() {
               placeholder="Masukan Kata Sandi"
             />
           </div>
-          <div className="col-auto">
+          {/* <div className="col-auto">
           <div className="mb-3 form-check mt-2">
             <input
               type="checkbox"
               className="form-check-input" id="showPassword"></input>
             <label className="form-check-label" for="showPassword">Lihat Password</label>
             </div>
-          </div>
+          </div> */}
           <div className="col-auto">
-            <p className="forgot-password text-right mt-4"><a href="#">Lupa Password</a>
+            <p className="forgot-password text-right mt-2"><a href="#">Lupa Password</a>
               </p>
           </div>
           <div className="d-grid gap-2 mt-3">
