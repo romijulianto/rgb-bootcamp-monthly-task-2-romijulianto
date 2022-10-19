@@ -2,6 +2,11 @@
 
 _Documentation by Romi Julianto_
 
+## Run Server
+
+```bash
+- npm run start:dev
+```
 ## Installation
 
 ```bash
