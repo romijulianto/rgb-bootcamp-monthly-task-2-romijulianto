@@ -1,6 +1,6 @@
 import React from "react"
 
-function Auth() {
+function SignIn() {
   return (
     <div className="Auth-form-container">
       <form className="Auth-form">
@@ -48,4 +48,4 @@ function Auth() {
   )
 }
 
-export default Auth
+export default SignIn

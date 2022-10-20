@@ -8,11 +8,17 @@
   src: url('./assets/fonts/Poppins-Regular.ttf');
 }
 
+* {
+  border: 2px;
+  color: black;
+}
+
 .App {
   background-color: black;
   background: url(./assets/images/ic_background_img.png);
 }
 
+/* Sign In Style */
 .Auth-form-container {
   background: url(./assets/images/ic_background_img.png);
   display: flex;
@@ -60,3 +66,4 @@ label {
   line-height: 22px;
   color: #444444;
 }
+/* End Sign In Style */
