@@ -45,7 +45,8 @@ _Documentation by Romi Julianto_
 - nest g service modules/cms/clinics_tes
 - nest g controller modules/cms/clinics_tes
 ```
-
+## Run Request in PostMan
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/d580677eaec68d04a665?action=collection%2Fimport)
 ### Referensi
 
 - [How to Build Web APIs with NestJS, Postgres, and Sequelize - A Beginner's Guide](https://www.freecodecamp.org/news/build-web-apis-with-nestjs-beginners-guide/)
