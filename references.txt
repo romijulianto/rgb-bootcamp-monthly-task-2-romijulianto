@@ -1,0 +1,16 @@
+Referensi Montly Task
+
+Back End
+- Multi Role User
+  - https://medium.com/@rahulrulz680/manage-role-based-authorization-using-guards-in-nestjs-34b3be412e50
+  - https://kuros.in/typescript/nestjs-role-based-authentication-and-authorization-using-guards/
+  - https://wanago.io/2021/11/15/api-nestjs-authorization-roles-claims/
+  - https://www.codemag.com/Article/2001081/Nest.js-Step-by-Step-Part-3-Users-and-Authentication
+
+Front End
+- Login Form
+  - https://supertokens.com/blog/building-a-login-screen-with-react-and-bootstrap
+  - https://mdbootstrap.com/docs/react/extended/login-form/
+  - https://colorlib.com/wp/template/login-form-20/
+  - https://www.positronx.io/build-react-login-sign-up-ui-template-with-bootstrap-4/
+  - https://react-bootstrap.github.io/forms/validation/ (validation)

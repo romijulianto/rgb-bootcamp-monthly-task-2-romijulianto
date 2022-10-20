@@ -41,6 +41,9 @@ _Documentation by Romi Julianto_
 - nest g module modules/cms/clinics_tes
 - nest g service modules/cms/clinics_tes
 - nest g controller modules/cms/clinics_tes
+- nest g module modules/cms/clinics_tes
+- nest g service modules/cms/clinics_tes
+- nest g controller modules/cms/clinics_tes
 ```
 
 ### Referensi
