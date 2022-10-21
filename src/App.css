@@ -13,6 +13,7 @@
   color: black;
 }
 
+
 .App {
   background-color: black;
   background: url(./assets/images/ic_background_img.png);
@@ -53,9 +54,16 @@
   color: #393939;
 }
 
-.btn, .button-primary {
+.btn-primary {
   background: #4E96E5;
   border-radius: 29px;
+}
+
+.btn-secondary {
+  background: white;
+  border-radius: 5px;
+  color: black;
+  border-color: #4E96E5;
 }
 
 label {
@@ -64,6 +72,34 @@ label {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #444444;
+}
+
+#inputNeeded {
+  color: red;
 }
 /* End Sign In Style */
+
+/* Register Style */
+a, u, b {
+  text-decoration: none;
+  color: #4E96E5;
+}
+
+#submitButtonContainer {
+    padding: 0px;
+    gap: 32px;
+    width: 300px;
+    height: 116px;
+}
+
+#footer {
+  color: #8897A8;
+}
+
+h3 {
+  font-family: 'Poppins Semibold';
+}
+
+#containerHeading {
+  font-family: 'Poppins regular';
+}
