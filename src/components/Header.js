@@ -4,17 +4,17 @@ import { ReactComponent as Person } from "../assets/icons/ic_person.svg";
 
 function Header() {
   return (
-    <header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
+    <header className="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
       <nav
-        class="container-xxl bd-gutter flex-wrap flex-lg-nowrap"
+        className="container-xxl bd-gutter flex-wrap flex-lg-nowrap"
         aria-label="Main navigation"
       >
-        <div class="bd-navbar-toggle">
+        <div className="bd-navbar-toggle">
           <button className="btn btn-inline">
             <LogoHeader />
           </button>
         </div>
-        <div class="bd-navbar-toggle">
+        <div className="bd-navbar-toggle">
           <button className="btn btn-primary btn-primary-inline">
             <Person />
             <label className="px-2" id="userName">

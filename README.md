@@ -18,4 +18,6 @@ _Documentation by Romi Julianto_
 - npm run start
 - Login : localhost:4000/sign-in
 - Register : localhost:4000/register
+- Booking : localhost:4000/booking
+- Detail Booking : localhost:4000/detail-booking
 ```
