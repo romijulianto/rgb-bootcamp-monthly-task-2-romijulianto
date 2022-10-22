@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as EyeSlah } from '../../assets/icons/ic_eye_slash.svg';
-import { ReactComponent as Logo } from '../../assets/icons/ic_logo.svg';
+import { ReactComponent as EyeSlah } from "../../assets/icons/ic_eye_slash.svg";
+import { ReactComponent as Logo } from "../../assets/icons/ic_logo.svg";
 
 function Register() {
     return (
@@ -9,7 +9,9 @@ function Register() {
             <div class="container text-center mt-5">
                 <Logo />
                 <h3 class="col mt-4">Masukan Identitas</h3>
-                <div class="col mt-3 mb-5" id="containerHeading">Masukkan data diri kamu untuk pengguna baru</div>
+                <div class="col mt-3 mb-5" id="containerHeading">
+                    Masukkan data diri kamu untuk pengguna baru
+                </div>
             </div>
             <div className="container justify-content">
                 <div className="w-100"></div>
@@ -83,14 +85,42 @@ function Register() {
                                 </label>
                                 <label id="inputNeeded">*</label>
                                 <div class="input-group">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">+62</button>
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle"
+                                        type="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="true"
+                                    >
+                                        +62
+                                    </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Action
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Another action
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Something else here
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Separated link
+                                            </a>
+                                        </li>
                                     </ul>
-                                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="8xxx-xxxx-xxxx" />
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        aria-label="Text input with dropdown button"
+                                        placeholder="8xxx-xxxx-xxxx"
+                                    />
                                 </div>
                                 <div class="mb-3 mt-3">
                                     <label for="inputEmail" class="form-label">
@@ -126,13 +156,13 @@ function Register() {
                                         Alamat Lengkap
                                     </label>
                                     <label id="inputNeeded">*</label>
-                                    <input
+                                    <textarea
                                         type="text"
                                         class="form-control"
                                         id="inputAddress"
                                         aria-describedby="addressHelp"
                                         required
-                                    ></input>
+                                    ></textarea>
                                     <div id="addressHelp" class="form-text">
                                         Alamat sesuai dengan kartu tanda penduduk
                                     </div>
@@ -145,7 +175,12 @@ function Register() {
                                         </label>
                                         <label id="inputNeeded">*</label>
                                         <div className="input-group">
-                                            <input type="password" class="form-control" placeholder="Buat kata sandi" aria-label="Buat kata sandi" />
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                placeholder="Buat kata sandi"
+                                                aria-label="Buat kata sandi"
+                                            />
                                             <button type="button" class="btn btn-secondary">
                                                 <EyeSlah />
                                             </button>
@@ -157,7 +192,13 @@ function Register() {
                                         </label>
                                         <label id="inputNeeded">*</label>
                                         <div className="input-group">
-                                            <input type="password" name="password" class="form-control" placeholder="Password" required />
+                                            <input
+                                                type="password"
+                                                name="password"
+                                                class="form-control"
+                                                placeholder="Password"
+                                                required
+                                            />
                                             <button type="button" class="btn btn-secondary">
                                                 <EyeSlah />
                                             </button>
@@ -167,8 +208,15 @@ function Register() {
                             </form>
 
                             <div className="col mt-4">
-                                <input class="form-check-input" type="checkbox" id="termAndConditons" value="term-conditions" required />
-                                <label class="form-check-label px-2" for="termAndConditons">Saya setuju dengan
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="termAndConditons"
+                                    value="term-conditions"
+                                    required
+                                />
+                                <label class="form-check-label px-2" for="termAndConditons">
+                                    Saya setuju dengan
                                     <a href="#">
                                         <b> Peraturan Pengguna & Kebijakan Privasi</b>
                                     </a>
@@ -176,21 +224,36 @@ function Register() {
                             </div>
 
                             <div className="col mt-2">
-                                <input class="form-check-input" type="checkbox" id="termAndConditons2" value="term-conditions" required />
-                                <label class="form-check-label px-2" for="termAndConditons2">Saya setuju dengan
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="termAndConditons2"
+                                    value="term-conditions"
+                                    required
+                                />
+                                <label class="form-check-label px-2" for="termAndConditons2">
+                                    Saya setuju dengan
                                     <a href="#">
                                         <b> Syarat dan Pengguna</b>
                                     </a>
                                 </label>
                             </div>
 
-                            <div className="container text-center mt-5" id="submitButtonContainer">
+                            <div
+                                className="container text-center mt-5"
+                                id="submitButtonContainer"
+                            >
                                 <div className="d-grid gap-2 mt-3">
                                     <button type="submit" className="btn btn-primary">
                                         Buat Akun
                                     </button>
                                 </div>
-                                <label className="mt-4" id="toSignIn">Sudah Punya Akun? <a href="#"><b>Masuk</b></a></label>
+                                <label className="mt-4" id="toSignIn">
+                                    Sudah Punya Akun?{" "}
+                                    <a href="#">
+                                        <b>Masuk</b>
+                                    </a>
+                                </label>
                             </div>
 
                             <div className="container text-center mt-4">

@@ -16,10 +16,10 @@
 
 .App {
   background-color: black;
-  background: url(./assets/images/ic_background_img.png);
 }
 
 /* Sign In Style */
+
 .Auth-form-container {
   background: url(./assets/images/ic_background_img.png);
   display: flex;
@@ -102,4 +102,32 @@ h3 {
 
 #containerHeading {
   font-family: 'Poppins regular';
+}
+
+/* End Style Register */
+
+/* Booking Style */
+header {
+  background-color: rgb(250, 250, 250);
+  
+}
+
+#formBooking {
+  background-color: rgb(250, 250, 250);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#userName {
+  color: white;
+}
+
+#textSecondary {
+  color: #8897A8;
+}
+
+#containerButtonBooking {
+  background-color: #cddff2;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

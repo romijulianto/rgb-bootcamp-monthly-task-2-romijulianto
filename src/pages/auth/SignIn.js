@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function SignIn() {
   return (
@@ -22,17 +22,24 @@ function SignIn() {
               placeholder="Masukan Kata Sandi"
             />
           </div>
-          {/* <div className="col-auto">
-          <div className="mb-3 form-check mt-2">
-            <input
-              type="checkbox"
-              className="form-check-input" id="showPassword"></input>
-            <label className="form-check-label" for="showPassword">Lihat Password</label>
+          <div className="col col-inline">
+            <div className="col">
+              <div className="form-check mt-2 form-check-inline">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="showPassword"
+                ></input>
+                <label className="form-check-label" for="showPassword">
+                  Lihat Password
+                </label>
+              </div>
             </div>
-          </div> */}
-          <div className="col-auto">
-            <p className="forgot-password text-right mt-2"><a href="#">Lupa Password</a>
+            <div className="col">
+              <p className="forgot-password text-right mt-2">
+                <a href="#">Lupa Password</a>
               </p>
+            </div>
           </div>
           <div className="d-grid gap-2 mt-3">
             <button type="submit" className="btn btn-primary">
@@ -44,8 +51,8 @@ function SignIn() {
           </p>
         </div>
       </form>
-      </div>
-  )
+    </div>
+  );
 }
 
-export default SignIn
+export default SignIn;
