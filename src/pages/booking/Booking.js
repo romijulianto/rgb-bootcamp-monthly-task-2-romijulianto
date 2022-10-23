@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/Header";
+import Header from "../../components/Navigation";
 import { ReactComponent as BackButton } from "../../assets/icons/ic_back_button.svg";
 
 function Booking() {

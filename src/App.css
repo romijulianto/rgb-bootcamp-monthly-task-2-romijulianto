@@ -197,3 +197,10 @@ header {
     gap: 24px;
 }
 
+.dropdown-toggle::after {
+  content: none;
+}
+
+/* Navigation */
+
+

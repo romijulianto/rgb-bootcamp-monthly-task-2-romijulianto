@@ -22,7 +22,7 @@ function SignIn() {
               placeholder="Masukan Kata Sandi"
             />
           </div>
-          <div className="col col-inline">
+          <div className="row">
             <div className="col">
               <div className="form-check mt-2 form-check-inline">
                 <input
@@ -35,8 +35,8 @@ function SignIn() {
                 </label>
               </div>
             </div>
-            <div className="col">
-              <p className="forgot-password text-right mt-2">
+            <div className="col text-end">
+              <p className="text-right mt-2">
                 <a href="#">Lupa Password</a>
               </p>
             </div>
