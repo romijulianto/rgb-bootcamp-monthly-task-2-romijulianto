@@ -202,5 +202,9 @@ header {
 }
 
 /* Navigation */
-
+.dropdown-menu {
+  font-family: 'Poppins Regular';
+  font-size: 13px;
+  color: #c8cdd2;
+}
 
