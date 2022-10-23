@@ -18,7 +18,7 @@ function Booking() {
           </div>
           <div className="container">
             <form>
-              <label for="inputClinic" className="form-label">
+              <label htmlFor="inputClinic" className="form-label">
                 Pilih Klinik
               </label>
               <label id="inputNeeded">*</label>
@@ -32,7 +32,7 @@ function Booking() {
                 <option value="3">Klinik Karang</option>
               </select>
 
-              <label for="inputTes" className="form-label">
+              <label htmlFor="inputTes" className="form-label">
                 Pilih Produk tes Covid
               </label>
               <label id="inputNeeded">*</label>
@@ -47,7 +47,7 @@ function Booking() {
               </select>
               <div className="row g-3">
                 <div className="col">
-                  <label for="inputDate" className="form-label">
+                  <label htmlFor="inputDate" className="form-label">
                     Pilih Tanggal
                   </label>
                   <label id="inputNeeded">*</label>
@@ -61,7 +61,7 @@ function Booking() {
                   </div>
                 </div>
                 <div className="col">
-                  <label for="inputTime" className="form-label">
+                  <label htmlFor="inputTime" className="form-label">
                     Pilih Jam
                   </label>
                   <label id="inputNeeded">*</label>
@@ -78,7 +78,7 @@ function Booking() {
               </div>
 
               <div className="col mt-3">
-                <label for="inputTes" className="form-label">
+                <label htmlFor="inputTes" className="form-label">
                   Kuota <label id="textSecondary">(Display Only)</label>
                 </label>
                 <select
