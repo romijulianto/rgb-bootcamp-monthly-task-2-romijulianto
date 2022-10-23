@@ -20,7 +20,7 @@ function Register() {
             <div className="container">
               <form>
                 <div className="mb-3">
-                  <label for="inputNIK" className="form-label">
+                  <label htmlFor="inputNIK" className="form-label">
                     Nomor KTP (Kartu Tanda Penduduk)
                   </label>
                   <label id="inputNeeded">*</label>
@@ -33,7 +33,7 @@ function Register() {
                   ></input>
                 </div>
                 <div className="mb-3">
-                  <label for="inputName" className="form-label">
+                  <label htmlFor="inputName" className="form-label">
                     Masukan Nama Lengkap
                   </label>
                   <label id="inputNeeded">*</label>
@@ -48,7 +48,7 @@ function Register() {
                     Nama sesuai dengan Kartu Tanda Penduduk
                   </div>
                 </div>
-                <label for="inputName" className="form-label">
+                <label htmlFor="inputName" className="form-label">
                   Jenis Kelamin
                 </label>
                 <label id="inputNeeded">*</label>
@@ -62,7 +62,7 @@ function Register() {
                     value="option1"
                     required
                   />
-                  <label className="form-check-label" for="inlineRadio1">
+                  <label className="form-check-label" htmlFor="inlineRadio1">
                     Laki-laki
                   </label>
                 </div>
@@ -75,12 +75,12 @@ function Register() {
                     value="option2"
                     required
                   />
-                  <label className="form-check-label" for="inlineRadio2">
+                  <label className="form-check-label" htmlFor="inlineRadio2">
                     Perempuan
                   </label>
                 </div>
                 <div className="w-100"></div>
-                <label for="inputNumber" className="form-label mt-3">
+                <label htmlFor="inputNumber" className="form-label mt-3">
                   Nomor Handphone
                 </label>
                 <label id="inputNeeded">*</label>
@@ -123,7 +123,7 @@ function Register() {
                   />
                 </div>
                 <div className="mb-3 mt-3">
-                  <label for="inputEmail" className="form-label">
+                  <label htmlFor="inputEmail" className="form-label">
                     Email
                   </label>
                   <label id="inputNeeded">*</label>
@@ -137,7 +137,7 @@ function Register() {
                   ></input>
                 </div>
                 <div className="mb-3 mt-3">
-                  <label for="inputBirthday" className="form-label">
+                  <label htmlFor="inputBirthday" className="form-label">
                     Tanggal lahir
                   </label>
                   <label id="inputNeeded">*</label>
@@ -152,7 +152,7 @@ function Register() {
                 </div>
 
                 <div className="mb-3">
-                  <label for="inputAddress" className="form-label">
+                  <label htmlFor="inputAddress" className="form-label">
                     Alamat Lengkap
                   </label>
                   <label id="inputNeeded">*</label>
@@ -170,7 +170,7 @@ function Register() {
 
                 <div className="row g-3">
                   <div className="col">
-                    <label for="inputPassword" className="form-label">
+                    <label htmlFor="inputPassword" className="form-label">
                       Kata Sandi
                     </label>
                     <label id="inputNeeded">*</label>
@@ -187,7 +187,7 @@ function Register() {
                     </div>
                   </div>
                   <div className="col">
-                    <label for="inputPassword" className="form-label">
+                    <label htmlFor="inputPassword" className="form-label">
                       Ulangi Kata Sandi
                     </label>
                     <label id="inputNeeded">*</label>
@@ -215,7 +215,7 @@ function Register() {
                   value="term-conditions"
                   required
                 />
-                <label className="form-check-label px-2" for="termAndConditons">
+                <label className="form-check-label px-2" htmlFor="termAndConditons">
                   Saya setuju dengan
                   <a href="#">
                     <b> Peraturan Pengguna & Kebijakan Privasi</b>
@@ -233,7 +233,7 @@ function Register() {
                 />
                 <label
                   className="form-check-label px-2"
-                  for="termAndConditons2"
+                  htmlFor="termAndConditons2"
                 >
                   Saya setuju dengan
                   <a href="#">

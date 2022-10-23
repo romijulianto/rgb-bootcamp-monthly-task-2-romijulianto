@@ -7,6 +7,7 @@ _Documentation by Romi Julianto_
 ```bash
 - npx create-react-app frontend
 - npm install --save bootstrap
+- npm install jquery popper.js
 - npm install --save react-router-dom
 
 ```
