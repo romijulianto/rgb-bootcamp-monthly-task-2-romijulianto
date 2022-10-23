@@ -9,6 +9,7 @@ _Documentation by Romi Julianto_
 - npm install --save bootstrap
 - npm install jquery popper.js
 - npm install --save react-router-dom
+- npm install --save axios
 
 ```
 
