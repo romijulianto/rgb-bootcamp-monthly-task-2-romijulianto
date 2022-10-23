@@ -10,6 +10,7 @@ _Documentation by Romi Julianto_
 - npm install jquery popper.js
 - npm install --save react-router-dom
 - npm install --save axios
+- npm install --save jwt-decode
 
 ```
 
