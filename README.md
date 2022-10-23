@@ -21,4 +21,5 @@ _Documentation by Romi Julianto_
 - Register : localhost:4000/register
 - Booking : localhost:4000/booking
 - Detail Booking : localhost:4000/detail-booking
+- Edit Profile : localhost:4000/edit-profile
 ```
