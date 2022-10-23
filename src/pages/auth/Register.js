@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { ReactComponent as EyeSlah } from "../../assets/icons/ic_eye_slash.svg";
 import { ReactComponent as Logo } from "../../assets/icons/ic_logo.svg";
 
-function Register() {
+const Register = () => {
+
+  /* Logic Register */
+  const [nik, setNIK] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [birth_date, setBirthDay] = useState(Date(""));
+  const [gender, setGender] = useState("Laki-laki");
+  const [address, setAddress] = useState("");
+  const navigate = useNavigate();
+
+  const registerUser = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post(`http://localhost:3000/api/apps/auth/signup`, {
+        nik,
+        name,
+        phone,
+        email,
+        password,
+        birth_date,
+        gender,
+        address,
+      });
+      navigate("/booking");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
   return (
     /* Design Front End */
     <div className="container">
@@ -18,7 +52,7 @@ function Register() {
         <div className="col">
           <div className="p-3">
             <div className="container">
-              <form>
+              <form onSubmit={registerUser}>
                 <div className="mb-3">
                   <label htmlFor="inputNIK" className="form-label">
                     Nomor KTP (Kartu Tanda Penduduk)
@@ -28,6 +62,8 @@ function Register() {
                     type="text"
                     className="form-control"
                     id="inputNIK"
+                    value={nik}
+                    onChange={(e) => setNIK(e.target.value)}
                     placeholder="ex: 18044577983564442"
                     required
                   ></input>
@@ -41,6 +77,8 @@ function Register() {
                     type="text"
                     className="form-control"
                     id="inputName"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     aria-describedby="nameHelp"
                     required
                   ></input>
@@ -59,7 +97,8 @@ function Register() {
                     type="radio"
                     name="inlineRadioOptions"
                     id="inlineRadio1"
-                    value="option1"
+                    value={gender}
+                    onChange={(e) => setGender(e.target.value)}
                     required
                   />
                   <label className="form-check-label" htmlFor="inlineRadio1">
@@ -72,7 +111,8 @@ function Register() {
                     type="radio"
                     name="inlineRadioOptions"
                     id="inlineRadio2"
-                    value="option2"
+                    value={gender}
+                    onChange={(e) => setGender(e.target.value)}
                     required
                   />
                   <label className="form-check-label" htmlFor="inlineRadio2">
@@ -96,22 +136,22 @@ function Register() {
                   <ul className="dropdown-menu">
                     <li>
                       <a className="dropdown-item" href="#">
-                        Action
+                        +1
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="#">
-                        Another action
+                        +80
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="#">
-                        Something else here
+                        +25
                       </a>
                     </li>
                     <li>
                       <a className="dropdown-item" href="#">
-                        Separated link
+                        Others
                       </a>
                     </li>
                   </ul>
@@ -119,6 +159,8 @@ function Register() {
                     type="text"
                     className="form-control"
                     aria-label="Text input with dropdown button"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     placeholder="8xxx-xxxx-xxxx"
                   />
                 </div>
@@ -132,6 +174,8 @@ function Register() {
                     className="form-control"
                     id="inputEmail"
                     aria-describedby="emailHelp"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="Masukan email anda"
                     required
                   ></input>
@@ -145,6 +189,8 @@ function Register() {
                     type="date"
                     className="form-control"
                     id="inputBirthday"
+                    value={birth_date}
+                    onChange={(e) => setBirthDay(e.target.value)}
                     aria-describedby="birthdayHelp"
                     placeholder="Pilih tanggal lahir"
                     required
@@ -160,6 +206,8 @@ function Register() {
                     type="text"
                     className="form-control"
                     id="inputAddress"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
                     aria-describedby="addressHelp"
                     required
                   ></textarea>
@@ -178,6 +226,8 @@ function Register() {
                       <input
                         type="password"
                         className="form-control"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                         placeholder="Buat kata sandi"
                         aria-label="Buat kata sandi"
                       />
@@ -194,7 +244,8 @@ function Register() {
                     <div className="input-group">
                       <input
                         type="password"
-                        name="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                         className="form-control"
                         placeholder="Password"
                         required
@@ -205,59 +256,61 @@ function Register() {
                     </div>
                   </div>
                 </div>
-              </form>
 
-              <div className="col mt-4">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="termAndConditons"
-                  value="term-conditions"
-                  required
-                />
-                <label className="form-check-label px-2" htmlFor="termAndConditons">
-                  Saya setuju dengan
-                  <a href="#">
-                    <b> Peraturan Pengguna & Kebijakan Privasi</b>
-                  </a>
-                </label>
-              </div>
-
-              <div className="col mt-2">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="termAndConditons2"
-                  value="term-conditions"
-                  required
-                />
-                <label
-                  className="form-check-label px-2"
-                  htmlFor="termAndConditons2"
-                >
-                  Saya setuju dengan
-                  <a href="#">
-                    <b> Syarat dan Pengguna</b>
-                  </a>
-                </label>
-              </div>
-
-              <div
-                className="container text-center mt-5"
-                id="submitButtonContainer"
-              >
-                <div className="d-grid gap-2 mt-3">
-                  <button type="submit" className="btn btn-primary">
-                    Buat Akun
-                  </button>
+                <div className="col mt-4">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="termAndConditons"
+                    value="term-conditions"
+                    required
+                  />
+                  <label className="form-check-label px-2" htmlFor="termAndConditons">
+                    Saya setuju dengan
+                    <a href="#">
+                      <b> Peraturan Pengguna & Kebijakan Privasi</b>
+                    </a>
+                  </label>
                 </div>
-                <label className="mt-4" id="toSignIn">
-                  Sudah Punya Akun?{" "}
-                  <a href="#">
-                    <b>Masuk</b>
-                  </a>
-                </label>
-              </div>
+
+                <div className="col mt-2">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="termAndConditons2"
+                    value="term-conditions"
+                    required
+                  />
+                  <label
+                    className="form-check-label px-2"
+                    htmlFor="termAndConditons2"
+                  >
+                    Saya setuju dengan
+                    <a href="#">
+                      <b> Syarat dan Pengguna</b>
+                    </a>
+                  </label>
+                </div>
+
+                <div
+                  className="container text-center mt-5"
+                  id="submitButtonContainer"
+                >
+                  <div className="d-grid gap-2 mt-3">
+                    <button type="submit" className="btn btn-primary">
+                      Buat Akun
+                    </button>
+                  </div>
+
+
+                  <label className="mt-4" id="toSignIn">
+                    Sudah Punya Akun?{" "}
+                    <a href="#">
+                      <b>Masuk</b>
+                    </a>
+                  </label>
+                </div>
+              </form>
 
               <div className="container text-center mt-4">
                 <label id="footer">Copyright © Rolling Glory Beta 2022</label>
