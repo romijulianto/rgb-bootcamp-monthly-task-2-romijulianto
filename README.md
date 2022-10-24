@@ -25,3 +25,6 @@ _Documentation by Romi Julianto_
 - Detail Booking : localhost:4000/detail-booking
 - Edit Profile : localhost:4000/edit-profile
 ```
+
+- [React JWT Authentication (without Redux) example](https://www.bezkoder.com/react-jwt-auth/)
+- [React JWT Authentication - Sign up, Login, Logout & Private Route](https://www.youtube.com/watch?v=T5dIjye4b-I)

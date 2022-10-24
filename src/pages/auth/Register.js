@@ -5,13 +5,13 @@ import { ReactComponent as EyeSlah } from "../../assets/icons/ic_eye_slash.svg";
 import { ReactComponent as Logo } from "../../assets/icons/ic_logo.svg";
 
 const Register = () => {
-
   /* Logic Register */
   const [nik, setNIK] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confPassword, setConfPassword] = useState("");
   const [birth_date, setBirthDay] = useState(Date(""));
   const [gender, setGender] = useState("Laki-laki");
   const [address, setAddress] = useState("");
@@ -26,6 +26,7 @@ const Register = () => {
         phone,
         email,
         password,
+        confPassword,
         birth_date,
         gender,
         address,
@@ -39,7 +40,6 @@ const Register = () => {
       }
     }
   };
-
 
   return (
     /* Design Front End */
@@ -248,8 +248,8 @@ const Register = () => {
                     <div className="input-group">
                       <input
                         type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        value={confPassword}
+                        onChange={(e) => setConfPassword(e.target.value)}
                         className="form-control"
                         placeholder="Password"
                         required
@@ -269,7 +269,10 @@ const Register = () => {
                     value="term-conditions"
                     required
                   />
-                  <label className="form-check-label px-2" htmlFor="termAndConditons">
+                  <label
+                    className="form-check-label px-2"
+                    htmlFor="termAndConditons"
+                  >
                     Saya setuju dengan
                     <a href="#">
                       <b> Peraturan Pengguna & Kebijakan Privasi</b>
@@ -306,10 +309,9 @@ const Register = () => {
                     </button>
                   </div>
 
-
                   <label className="mt-4" id="toSignIn">
                     Sudah Punya Akun?{" "}
-                    <a href="#">
+                    <a href="http://localhost:4000/sign-in">
                       <b>Masuk</b>
                     </a>
                   </label>
@@ -325,6 +327,6 @@ const Register = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Register;

@@ -222,7 +222,9 @@ function EditProfile() {
             className="container text-end mt-2 px-3 py-3"
             id="containerButtonBooking"
           >
-            <button className="btn btn-primary">Simpan Perubahan</button>
+            <button type="submit" className="btn btn-primary">
+              Simpan Perubahan
+            </button>
           </div>
         </div>
       </div>

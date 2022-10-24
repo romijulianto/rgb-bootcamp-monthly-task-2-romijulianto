@@ -6,9 +6,10 @@ function Booking() {
   return (
     <div id="bookingLayer">
       <Header />
-      <div className="container mt-5">
+
+      <div className="container mt-5 mb-5">
         <div className="container" id="formBooking">
-          <div className="d-flex">
+          <div className="container">
             <button className="btn mt-2">
               <BackButton />
             </button>
@@ -95,12 +96,10 @@ function Booking() {
           </div>
         </div>
 
-        <div
-          className="container text-end mt-2 px-3 py-3"
-          id="containerButtonBooking"
-        >
-          <button className="btn btn-primary">Buat Pesanan</button>
+        <div className="container text-end px-3" id="containerButtonBooking">
+          <button type="submit" className="btn btn-primary mt-4">Buat Pesanan</button>
         </div>
+
       </div>
     </div>
   );
